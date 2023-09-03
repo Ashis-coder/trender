@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./home.scss";
 import { useNavigate } from "react-router-dom";
-/*import Form from "../../components/form/Form";*/
+import Form from "../../components/form/Form";
 import Post from "../../components/post/Post";
 
 const Home = () => {
@@ -79,7 +79,14 @@ const Home = () => {
   ];
   return (
     <div className='home'>
+      <h1>Main Stream</h1>
+      {postValue.map((ps,index)=> {
+        console.log("J")
+        return <Post postName={ps.postUser}
+        imageurl={ps.imageurl} caption={ps.caption} likes={ps.likes} comments={ps.comments} />
+      })}
       <h1>Home</h1>
+      <Form />
       <h3>{currentUser?.username}</h3>
     </div>
   )

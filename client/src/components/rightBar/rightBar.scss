@@ -4,9 +4,9 @@
   top: 7rem;
   height: calc(100vh - 7rem);
   overflow: scroll;
-  background-color: #f6f3f3;
-
-
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
   &::-webkit-scrollbar{
     display: none;
   }
@@ -48,16 +48,13 @@
           align-items: center;
           gap: 2rem;
           position: relative;
-
           img{
             width: 4rem;
             height: 4rem;
             border: 2px solid black;
             border-radius: 50%;
             object-fit: cover;
-            
           }
-
           .online{
             width: 1.2rem;
             height: 1.2rem;
@@ -68,19 +65,14 @@
             left: 3rem;
             
           }
-
           p{
-
             color: grey;
-
           }
-
           span{
             font-weight: 500;
             color: black;
           }
         }
-
         .buttons{
           display: flex;
           align-items: center;
@@ -95,18 +87,15 @@
             border-radius: 2rem;
 
             &:first-child{
-              background-color: #5271ff;
+              background-color: orange;
             }
 
             &:last-child{
-              background-color: #f0544f;
+              background-color: purple;
             }
-
           }
         }
-
       }
-
     }
   }
 }
