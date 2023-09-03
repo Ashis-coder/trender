@@ -13,26 +13,28 @@ import avatar from "../../assets/avatar.jpg"
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <div className="left">
-        <Link to="/" style={{textDecoration:"none"}}>
-        <span>AnonymousSurf</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span id='appname'>AnonymousSurf</span>
         </Link>
-        <HomeOutlinedIcon/>
-        <DarkModeOutlinedIcon/>
-        <GridViewOutlinedIcon/>
-        <div className="search">
-          <SearchOutlinedIcon/>
-          <input type="text" placeholder='Search...' />
+      <div className="left">
+        <div className='navleft'>
+          <HomeOutlinedIcon className='navlogo'/>
+          <DarkModeOutlinedIcon className='navlogo'/>
+          <GridViewOutlinedIcon className='navlogo'/>
+          <div className="search">
+            <SearchOutlinedIcon />
+            <input type="text" placeholder='Search...' />
+          </div>
         </div>
       </div>
       <div className="right">
-      <Person2OutlinedIcon/>
-      <EmailOutlinedIcon/>
-      <NotificationsOutlinedIcon/>
-      <div className="user">
-         <img src={avatar} className='avatar' alt="" /> 
-        <span>Durgesh Gupta</span>
-      </div>
+        <Person2OutlinedIcon className='navlogo'/>
+        <EmailOutlinedIcon className='navlogo'/>
+        <NotificationsOutlinedIcon className='navlogo'/>
+        <div className="user">
+          <img src={avatar} className='avatar' alt="" />
+          <span>Durgesh Gupta</span>
+        </div>
       </div>
     </div>
   )

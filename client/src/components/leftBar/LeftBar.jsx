@@ -47,7 +47,7 @@ const LeftBar = () => {
         </div>
         <hr/>
         <div className="menu">
-          <span>Your shortcuts</span> 
+          <span id='unerline'>Your shortcuts</span> 
           <div className="item">
             <img src={Events} alt="events-logo" />
             <span>Events</span>
@@ -71,7 +71,7 @@ const LeftBar = () => {
         </div>
         <hr/>
         <div className="menu">
-          <span>Others</span>
+          <span id='unerline'>Others</span>
           <div className="item">
             <img src={Fund} alt="fund-logo" />
             <span>Fundraiser</span>
